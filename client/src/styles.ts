@@ -12,7 +12,7 @@ const panelHeaderBackground = '#2a2f32';
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #090e11;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -24,6 +24,7 @@ export const ChatAppWrapper = styled.div`
   height: 90vh;
   display: flex;
   flex-direction: row;
+  border-radius: 10px;
 `;
 
 export const LeftContainer = styled.div`

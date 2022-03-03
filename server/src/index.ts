@@ -21,7 +21,7 @@ const server = http.createServer(app);
 
 const io = new Server(server,{
   cors: {
-    origin: "https://magnumchatapp.netlify.app",
+    origin: "https://chat-app-client-app.herokuapp.com",
     methods: ["GET", "POST"],
     credentials: true
   }
