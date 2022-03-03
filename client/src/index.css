@@ -1,0 +1,24 @@
+body{
+    margin: 0 !important;
+}
+
+.ant-tabs > .ant-tabs-nav{
+    justify-content: space-between;
+}
+
+.ant-tabs-content{
+    height: 100%;
+}
+
+.ant-tabs-tab-btn{
+    color: white;
+    font-weight: 600;
+}
+.ant-tabs-nav-wrap{
+    width: 100% !important;
+}
+
+.ant-tabs-nav-list{
+    width: 100%;
+    justify-content: space-around;
+}
