@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "heroku_start": "ts-node src/index.js",
+    "heroku_start": "NODE_OPTIONS=--max_old_space_size=4096  ts-node src/index.js",
     "start": "ts-node src/index.js",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p .",
