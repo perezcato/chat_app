@@ -14,7 +14,7 @@ import BlockedUserModel from "./models/blockUser";
 const app = express()
 app.use(cors())
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 6000
 
 app.set( 'port', port )
 const server = http.createServer(app);
