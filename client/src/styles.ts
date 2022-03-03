@@ -161,6 +161,7 @@ export const Login = styled.div`
   width: 100vw;
   height: 100vh;
   justify-content: center;
+  background: #131c21
 `
 export const TopLeft = styled.div`
   display: flex;

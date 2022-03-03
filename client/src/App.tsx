@@ -10,7 +10,7 @@ import {SocketContext} from "./context";
 const { TabPane } = Tabs;
 
 function App() {
-  const { loginWithRedirect,logout,user,isAuthenticated } = useAuth0();
+  const { loginWithRedirect,logout,user, isAuthenticated } = useAuth0();
   const [desc, setDesc] = useState('')
   const [messages,setMessages] = useState<IMessage[]>([])
   const [currentUser, setCurrentUser] = useState<IUser|any>(null);
@@ -20,10 +20,9 @@ function App() {
   const [activeRoom,setActiveRoom] = useState('');
   const [activeUser,setActiveUser] = useState<IUser|any>(null);
   const [rooms,setRooms] = useState<IRoom[]>([]);
-  const [disappear,setDisappear] = useState(false);
+  const [disappear, setDisappear] = useState(false);
 
   const socket = useContext(SocketContext);
-
 
   useEffect(()=>{
     if(isAuthenticated){
@@ -290,7 +289,7 @@ function App() {
       </ChatAppWrapper>
     </Container>):
       <Login>
-        <button style={{color: 'blue'}} onClick={() => loginWithRedirect()}>Login</button>
+        <button style={{color: 'black', width: '300px', height: '50px', cursor: 'pointer'}} onClick={() => loginWithRedirect()}>Login</button>
       </Login>
   );
 }
